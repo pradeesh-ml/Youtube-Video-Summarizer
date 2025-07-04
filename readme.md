@@ -5,8 +5,8 @@ Tired of clickbait titles and 2-hour videos that could’ve been a 5-minute read
 Powered by a **locally-run Llama 3 model**, this app goes beyond basic summarization — it intelligently filters out fluff and distills core content into actionable insights, deep explanations, and key quotes.
 
 <p align="center">
-  <img src="images/screenshot1.png" width="45%" alt="Screenshot 1">
-  <img src="images/screenshot2.png" width="45%" alt="Screenshot 2">
+  <img src="images/img_1.png" width="45%" alt="Screenshot 1">
+  <img src="images/img_2.png" width="45%" alt="Screenshot 2">
 </p>
 
 
