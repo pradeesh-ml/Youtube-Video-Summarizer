@@ -1,53 +1,73 @@
-# YouTube Deep Dive Summarizer (Llama 3 & Streamlit)
+# 🎥 YouTube Deep Dive Summarizer (Llama 3 + Streamlit)
 
-Tired of clickbait titles and 2-hour videos that could have been a 5-minute read? This tool acts as your personal research analyst, transforming any YouTube video into a structured, detailed "Intelligence Brief."
+Tired of clickbait titles and 2-hour videos that could’ve been a 5-minute read? This tool acts as your **personal research analyst**, transforming any YouTube video into a structured, detailed **Intelligence Brief**.
 
-Using a locally-run Llama 3 model, this application goes beyond simple summarization. It intelligently filters out promotional fluff ("like and subscribe!") and deconstructs the core content into actionable insights, detailed explanations, and key quotes.
+Powered by a **locally-run Llama 3 model**, this app goes beyond basic summarization — it intelligently filters out fluff and distills core content into actionable insights, deep explanations, and key quotes.
 
-![App Demo GIF](URL_TO_YOUR_DEMO_GIF)
+<p align="center">
+  <img src="images/screenshot1.png" width="45%" alt="Screenshot 1">
+  <img src="images/screenshot2.png" width="45%" alt="Screenshot 2">
+</p>
 
----
-
-### ✨ Key Features
-
-- **Deep Dive Analysis**: Instead of a simple summary, the app generates a multi-part brief including:
-  - **⚡ Executive Brief**: A one-sentence summary of the core thesis.
-  - **🎯 Actionable Intelligence**: The most critical insights and takeaways.
-  - **📚 Comprehensive Breakdown**: A detailed, educational explanation of the video's main points, concepts, and examples.
-  - **🎙️ Key Quotables**: The most impactful quotes from the video.
-- **Intelligent Content Filtering**: The prompt is specifically engineered to ignore and omit common YouTube creator jargon, such as requests to "like, subscribe, comment," sponsor messages, and self-promotion.
-- **Completely Local & Private**: Powered by **Ollama**, the entire AI analysis runs on your local machine. No data is sent to external APIs, ensuring 100% privacy.
-- **Interactive & Efficient UI**: Built with **Streamlit**, the app uses caching and session state for a smooth, responsive experience without unnecessary re-processing.
-- **Advanced Prompt Engineering**: The quality of the output is driven by a highly detailed, role-playing system prompt designed to maximize the analytical capabilities of Llama 3.
-
-### 🛠️ Tech Stack
-
-- **Language**: Python
-- **Web Framework**: Streamlit
-- **LLM Orchestration**: LangChain
-- **Local LLM Provider**: Ollama
-- **LLM**: Llama 3 (8B parameter model recommended)
-- **YouTube Integration**: `google-api-python-client`, `youtube-transcript-api`
 
 ---
 
-### 🚀 Getting Started
+## ✨ Key Features
 
-Follow these steps to run the project locally.
+- **🧠 Deep Dive Analysis**  
+  The summary is broken into a multi-part brief:
+  - ⚡ **Executive Brief**: One-sentence summary of the core thesis.
+  - 🎯 **Actionable Intelligence**: Most critical insights and takeaways.
+  - 📚 **Comprehensive Breakdown**: Detailed explanation of concepts, examples, and key messages.
+  - 🎙️ **Key Quotables**: Impactful quotes from the video.
 
-#### 1. Prerequisites
+- **🚫 Intelligent Content Filtering**  
+  Automatically skips:
+  - “Like, comment, and subscribe”
+  - Sponsored messages
+  - Channel promotion and filler talk
+
+- **🔒 100% Local & Private**  
+  Runs fully on your machine using [**Ollama**](https://ollama.com/).  
+  No external API calls for summarization — your data stays with you.
+
+- **⚡ Fast & Interactive UI**  
+  Built using **Streamlit** with session caching for smooth experience.
+
+- **🎯 Precision Prompting**  
+  Backed by a powerful system prompt designed to act like a professional analyst.
+
+---
+
+## 🛠️ Tech Stack
+
+| Component         | Tool/Framework                  |
+|------------------|---------------------------------|
+| Language         | Python                          |
+| UI Framework     | Streamlit                       |
+| LLM Orchestration| LangChain                       |
+| Local LLM Engine | Ollama                          |
+| Model            | Llama 3 (8B recommended)        |
+| YouTube Access   | `google-api-python-client`, `youtube-transcript-api` |
+
+---
+
+## 🚀 Getting Started
+
+### 1. ✅ Prerequisites
 
 - Python 3.8+
-- [Ollama](https://ollama.com/) installed and running.
+- [Ollama installed & running](https://ollama.com/)
 
-#### 2. Install the Recommended LLM
+### 2. 📥 Pull the Recommended Model
 
-For the best results with the detailed prompt, the 8-billion parameter Llama 3 model is recommended.
-
-```sh
+```bash
 ollama pull llama3:8b
 
-#### 3.Clone and setup the project
+```
+
+
+### 3.Clone and setup the project
 # Clone the repository
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
@@ -71,6 +91,3 @@ pip install -r requirements.txt
 #### 5. Run the App
 - streamlit run app.py
 
-
-
-```
