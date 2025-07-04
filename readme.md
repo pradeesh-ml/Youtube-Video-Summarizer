@@ -86,8 +86,8 @@ ollama pull llama3:8b
     2. In your project's root directory, create a folder named .streamlit.
     3. Inside that folder, create a file named secrets.toml.
     4. Add your key to the file:
-    # .streamlit/secrets.toml
-  - YOUTUBE_API_KEY = "YOUR_API_KEY_HERE"
+    ##### .streamlit/secrets.toml
+     - YOUTUBE_API_KEY = "YOUR_API_KEY_HERE"
 #### 5. Run the App
 - streamlit run app.py
 
