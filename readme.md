@@ -68,16 +68,16 @@ ollama pull llama3:8b
 
 
 ### 3.Clone and setup the project
-# Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+#### Clone the repository
+ - git clone https://github.com/your-username/your-repo-name.git
+ - cd your-repo-name
 
-# Create and activate a virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+#### Create and activate a virtual environment
+ - python -m venv venv
+ - source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install dependencies from requirements.txt
-pip install -r requirements.txt
+#### Install dependencies from requirements.txt
+ - pip install -r requirements.txt
 
 #### 4.Configure API Keys
 - The app uses the YouTube Data API to fetch video details.
@@ -87,7 +87,7 @@ pip install -r requirements.txt
     3. Inside that folder, create a file named secrets.toml.
     4. Add your key to the file:
     # .streamlit/secrets.toml
-    YOUTUBE_API_KEY = "YOUR_API_KEY_HERE"
+  - YOUTUBE_API_KEY = "YOUR_API_KEY_HERE"
 #### 5. Run the App
 - streamlit run app.py
 
