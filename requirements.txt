@@ -1,0 +1,7 @@
+streamlit
+langchain-community
+langchain-core
+ollama
+youtube-transcript-api
+google-api-python-client
+
